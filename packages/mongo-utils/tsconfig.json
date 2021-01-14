@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "build",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "module": "commonjs",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "build",
+    "strict": true,
+    "target": "ES2018",
+    "typeRoots": ["../../node_modules/@types"]
+  }
+}
