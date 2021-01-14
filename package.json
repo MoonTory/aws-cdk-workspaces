@@ -1,0 +1,24 @@
+{
+  "name": "aws-cdk-workspaces",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MoonTory/aws-cdk-workspaces.git",
+  "author": "MoonTory | Gustavo Quinta <gustavoqnt40@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test"
+  },
+  "workspaces": [
+    "infra",
+    "packages/*",
+    "services/*"
+  ],
+  "resolutions": {
+    "semver": "7.3.4",
+    "universalify": "2.0.0",
+    "ms": "2.1.2",
+    "safe-buffer": "5.2.1"
+  }
+}
