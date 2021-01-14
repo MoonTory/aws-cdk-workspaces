@@ -1,0 +1,24 @@
+type Post @model {
+  id: ID!
+  title: String!
+}
+
+input PostInput {
+  title: String!
+}
+
+input UpdatePostInput {
+  id: ID!
+  title: String
+}
+
+type Query {
+  getPostById(PostId: String!): Post
+  listPosts: [Post]
+}
+
+type Mutation {
+  createPost(PostInput: PostInput!): Post
+  updatePost(UpdatePostInput: UpdatePostInput!): Post
+  deletePost(PostId: String!): String
+}
