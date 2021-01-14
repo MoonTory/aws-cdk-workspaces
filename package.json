@@ -8,6 +8,9 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn workspaces run build",
+    "layer": "sh scripts/deps-layer.sh",
+    "ci:local": "sh scripts/local-ci.sh",
+    "clean": "sh scripts/clean-workspace.sh",
     "test": "yarn workspaces run test"
   },
   "workspaces": [
